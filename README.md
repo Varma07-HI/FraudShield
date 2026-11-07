@@ -4,8 +4,7 @@ A machine learning system that detects fraudulent credit card transactions, buil
 
 🔗 **Live demo:** https://fraudshield-creditcard.streamlit.app/
 
-![FraudShield dashboard](<Screenshot 2026-11-07 171220.png>)
-
+![alt text](docs/dashboard.png)
 ---
 
 ## 🚀 Overview
