@@ -1,0 +1,82 @@
+{
+  "models": [
+    {
+      "model": "dummy",
+      "val_pr_auc": 0.0010006846789908884,
+      "val_roc_auc": 0.5,
+      "val_recall_at_precision_90": 0.0,
+      "test_pr_auc": 0.001316667251852112,
+      "test_roc_auc": 0.5,
+      "test_recall_at_precision_90": 0.0
+    },
+    {
+      "model": "logistic",
+      "val_pr_auc": 0.761797283983634,
+      "val_roc_auc": 0.9718747610626454,
+      "val_recall_at_precision_90": 0.6666666666666666,
+      "test_pr_auc": 0.7483956712577766,
+      "test_roc_auc": 0.9833011642964707,
+      "test_recall_at_precision_90": 0.6933333333333334
+    },
+    {
+      "model": "random_forest",
+      "val_pr_auc": 0.766959000416202,
+      "val_roc_auc": 0.9491297747391113,
+      "val_recall_at_precision_90": 0.7543859649122807,
+      "test_pr_auc": 0.820700379554383,
+      "test_roc_auc": 0.9408256133504433,
+      "test_recall_at_precision_90": 0.76
+    },
+    {
+      "model": "xgboost",
+      "val_pr_auc": 0.7802723434559202,
+      "val_roc_auc": 0.9806029113977126,
+      "val_recall_at_precision_90": 0.7543859649122807,
+      "test_pr_auc": 0.7946913980459526,
+      "test_roc_auc": 0.9742846930464488,
+      "test_recall_at_precision_90": 0.76
+    },
+    {
+      "model": "isolation_forest",
+      "val_pr_auc": 0.023236091420998205,
+      "val_roc_auc": 0.9336820893792191,
+      "val_recall_at_precision_90": 0.0,
+      "test_pr_auc": 0.04600351284745807,
+      "test_roc_auc": 0.9507889910407181,
+      "test_recall_at_precision_90": 0.0
+    }
+  ],
+  "imbalance_study": [
+    {
+      "variant": "no_resampling",
+      "pr_auc": 0.7724039992845013,
+      "roc_auc": 0.9845964024358661,
+      "recall_at_precision_90": 0.7017543859649122
+    },
+    {
+      "variant": "class_weight",
+      "pr_auc": 0.7802723434559202,
+      "roc_auc": 0.9806029113977126,
+      "recall_at_precision_90": 0.7543859649122807
+    },
+    {
+      "variant": "smote_in_pipeline",
+      "pr_auc": 0.7781466285463875,
+      "roc_auc": 0.9722203723846381,
+      "recall_at_precision_90": 0.7543859649122807
+    }
+  ],
+  "brier": {
+    "raw": 0.0008272938430309296,
+    "calibrated": 0.00039582856577132804
+  },
+  "at_threshold": {
+    "threshold": 0.37,
+    "review_cost": 5.0,
+    "alerts": 63,
+    "frauds_caught": 57,
+    "frauds_missed": 18,
+    "net_savings": 4775.990000000001,
+    "total_fraud_amount": 7729.26
+  }
+}
