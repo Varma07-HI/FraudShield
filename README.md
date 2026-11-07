@@ -2,6 +2,8 @@
 
 ![alt text](<Screenshot 2026-11-07 171220.png>)
 
+FraudShield-CreditCard - https://fraudshield-creditcard.streamlit.app/
+
 A fraud detection system evaluated the way production works: trained on the past,
 tested on the future, with the alert threshold chosen from money, not from 0.5.
 
